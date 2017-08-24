@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    
+    
+    
+    <script>
+    let students=[
+        {
+    name: "Aljona Virodova",
+    birthday: {
+        year:1992,
+        month:2,
+        day:2
+    },
+    sex: "female",
+    spiritAnimal: "cat",
+    skills: ["Driving", "Photographing", "reading books"]
+},
+              {
+    name: 'Andrei Bolog',
+    birthday: {
+        year: 1992,
+        month: 8,
+        day: 6
+        },
+    sex: "male",
+    spiritAnimal: "lion",
+    skills: ['JS', 'Football betting']
+},{
+    name: "Christina Hedegaard",
+    birthday: {
+        year: 1986,
+        month: 12,
+        day: 31
+    },
+    sex: "female",
+    spiritanimal: "Sloth",
+    skills: ["Design", "Crazy plant lady"]
+},{
+    name:"Ela arjomandi",
+    birthday:{
+        year:1985,
+        month:3,
+        day:6
+    },
+   sex:"female",
+   favoriteAnimal:"dog" ,
+    skills:["css","adobesuite","3dmodeling"]
+    
+    
+},{
+    name: "Izabela Turaj",
+    birthday: {
+        year: 1993,
+        month: 7,
+        day: 2
+    },
+    sex: "female",
+    spiritAnimal: "deer",
+    skills: ["Drinking beer", "Watching TV series", "Procrastinating"],  
+},{
+			name: "Mihaela Iorga",
+			birthday: {
+				year: 1993,
+				month: 8,
+				day: 6,
+			},
+
+			sex: "male",
+			spiritAnimal: "fox",
+			skills: ["UI", "UX", "HTML", "CSS", "JS"]
+		},{
+    name:"Stanka Sidenko",
+    birthday:{
+        year:1991,
+        month:4,
+        day:25
+    },
+    sex:"female",
+    spiritAnimal:"",
+    skills:["JS","Html","Shouting"]
+},{
+            name: "Valentina",
+            birth: {
+                year: 1995,
+                month: 7,
+                day: 28
+            },
+            sex: "female",
+            spiritAnimal: "pigeon",
+            skills: ["JS", "Magic", "Climbing /stairs/"]
+        },{
+	name: "Alieu Drammeh",
+	birthday: {
+		year: 1995,
+		month: 7,
+		day: 14
+	},
+	sex: "male",
+	spiritAnimal: "Dolphin",
+	skills: ["Design", "Basketball", "NBA2K"],
+	height: 182
+},{
+    name: 'Amalia Plana',
+    birthday: {                 
+        year: 1992,
+        month: 1,
+        day: 21
+    },
+    sex: 'female',
+    spiritAnimal:'Eagle',
+    skills: ['Animating', 'Volleyball', 'RollerSkating']
+    
+},{
+            name: "Annalisa Mason",
+            birthday: {
+                year: 1989,
+                month: 11,
+                day: 20
+            },
+            sex: "female",
+            spiritAnimal:"red panda",
+            skills: ["drawing","photography","pasta making"]
+        },{
+    
+
+
+name: "Toni Georgiana Patricia",
+birthday: {
+    year: 1978,
+    month: 8,
+    day: 6
+},
+    sex:"male",
+    spiritAnimal: "Vladimir Putin",
+    skills: ["AWESOMEING","Gin and Tonic drinking","Extreme gardening"]
+
+
+
+},{
+	
+	name:"Birkir Björnsson",
+	birthday:{
+		year:1988,
+		month:11,
+		day: 16
+	},
+	sex: "male",
+	spiritAnimal: "Polar Bear",
+	skills: ["Midget throwing", "Drinking more beer than Jonas", "JS"]
+	
+	
+},{
+  name: "Botond Birton",
+  birthday: {
+    year: 1984,
+    month: 5,
+    day: 20,
+  },
+  sex: "male",
+  spiritAnimal: "tamagotchi dog",
+  skills: ["Illustrator", "Photoshop", "Photography"]
+}
+,{
+    name: "Calin Valentin Dima",
+    birthday: {
+        year: 1992,
+        month: 9,
+        day: 27},
+    sex: "male",
+    spiritAnimal:"The Rock",
+    skills:["HTML","CSS","JS","Binge watching shows","Calisthenics"]
+},{
+    name: "Camille Doussy",
+    birthday: {
+        year: 1995,
+        month: 3,
+        day: 9,
+    },
+    sex: "female",
+    spiritAnimal: "koala",
+    skills: ["drawin"],
+    
+},{
+        name: "Charlene Marteyn",
+        birthday : {
+            year: 1992,
+            month:3,
+            day: 8
+        },
+        sex: "female", 
+        spiritAnimal: "Turtle", 
+        skills: ["speaking french", "drinking", "coding"]
+        
+    }
+,{
+
+    name: "Clarissa Schwarz-Linnet",
+    birthday: {
+        year: 1986,
+        month: 9,
+        day: 16
+    },
+
+    sex: "female",
+    spiritAnimal: "cat",
+    skills: ["JS", "dancing", "cooking"]
+}
+,{
+    name: "Constantin Guiu",
+    birthday: {
+        year: 1996,
+        month: 5,
+        day: 21
+    },
+    sex: "male",
+    spiritAnimal: "maybe :>",
+    skills: ["3DS Max", "Premiere Pro", "Driving", "Playing video-games :P"]
+},{
+    name: "David Ale",
+    birthday: {
+        year: 1991,
+        month: 10,
+        day: 31
+    },
+    sex: "male",
+    spiritAnimal: "Rainbow Lame",
+    skills: ["JS", "Getting hammered", "Loud Farter XD"],        
+},{
+    name: "Dovile Søndergaard",
+    birthday: {
+        year: 1990,
+        month: 1,
+        day: 7
+    },
+    sex: "female", /* isFemale: false */
+    spiritAnimal: "cat",
+    skills: ["JS", "rapping", "dancing"],
+},{
+    name: "Edita",
+    birthday: {
+     year: 1993,
+     month: 8,
+     day: 7
+    },
+     sex: "female",
+    skills: ["html", "drinking", "drawing"],
+},{
+        name:"Fiona Okafor",
+      birthday: {
+          year:1989,
+          month:2,
+          day:7
+      },
+        sex:"female",
+        spiritAnimal:"pug",
+        skills:["HTML", "skipping"]
+        
+    }
+    
+    
+    
+    
+,{
+    name: "Francesco D'Argento",
+    birthday: {
+        year: 1986,
+        month: 4,
+        day: 26
+    },
+    sex: "male",
+    spiritAnimal: "Snake",
+    skills: ["Music", "Party", "Design"]
+}
+,{
+    name: "Georgeana Panturu",
+    birthday: {
+        year: 1988,
+        month: 8,
+        day:13 
+    },
+    sex: "female",
+    spiritAnimal: "",
+    skills: ["JS", "Yoga", "SecretSkills"]
+},{
+    name: "Gintare Jankunaite",
+    bithday: {
+        year: 1997,
+        month: 9,
+        day: 23
+    },
+    sex: "female",
+    spiritAnimal: "cat",
+    skills: ["sleeping", "eating"]
+},{
+    name: "Greta Gerulyte",
+    birthday: {
+        year: 1990,
+        month: 9,
+        day: 27
+    },
+    sex: "female",
+    spiritAnimal: "owl",
+    skills: ["JS", "communication", "travelling"]
+},{
+name: "Greta Sipos",
+    birthday: {
+    year: 1995,
+    month: 10,
+    day: 20 
+    },
+    sex: "female",
+    spiritAnimal: "pig",
+    skills: ["Photoshop", "Drinking beer"]
+    
+},{
+    name: "Ioana Vladau",
+    birthday: {
+        year: 1996,
+        month: 7,
+        day: 3
+    },
+    sex: "female",
+    spiritAnimal: "quokka",
+    skills: ["HTML", "CSS", "JS", "eating"]
+},{
+    name:"Irina Salagup", 
+    birthday: {
+        year: 1992,
+        month: 07,
+        date: 17
+    },
+    sex: "female",
+    spiritAnimal: "Panda",
+    skills: ["JS", "Drawing", "Sleeping"]
+    
+},{
+    name: "Jaber Ibne Mahboob",
+    birthday: {
+        year: 1989,
+        month: 6,
+        day: 21
+    },
+    sex: "male",
+    spiritAnimal: "?",
+    skills: ["HTML", "CSS", "JS"]
+},{
+  name: "Michaela Hampachelova",
+  birthday: {
+    year: 1994,
+    month: 5,
+    day: 16,
+  },
+  sex: "female",
+  spiritAnimal: "panda",
+  skills: ["JS", "drawing", "cooking"],
+}
+,{
+    name: "Miguel",
+    birthday: {
+        year:1988,
+        month: 11,
+        day: 18
+    },
+    
+    sex: "male",
+    spiritAnimal: "Thestral",
+    skills:["js", "drinking beer", "procastinanting"]
+},{
+        name: "Patrycja",
+       course: "MMD",
+        nationality: "polish",
+        birthday: {
+            
+            year: 1996,
+            month: 3,
+            day: 27
+        },
+        sex: "female",
+        skills:["JavaScript"]
+        
+    }
+ ,{
+    name: "Rita Radovics",
+    birthday: {
+        year: 1989,
+        month: 11,
+        day: 9,
+    },
+    sex: "female",
+    spiritAnimal: "Axolotl",
+    skills: ["JS","cooking","sleeping"]
+},{
+    name: "Julia Yeomans",
+    birthday: {
+        year: 1996,
+        month: 8,
+        day: 6
+    },
+    sex: "Female",
+    spiritAnimal: "Cat",
+    skills:["Html", "CSS", "Beer Pong", "Badminton"]
+}
+,{
+    name: "Tabitha Bjørkman",
+    dateOfBirth: {
+        year: 1979,
+        month: 10,
+        day: 13
+    },
+    sex: "female",
+    spiritAnimal: "Mother Earth",
+    skills:["PHP", "CSS", "HTML", "Baking", "Teacher", "Art"]
+},{
+    name: "Tadeas Kosek",
+    birthday: {
+        year: 1997,
+        month: 7,
+        day: 23,
+    },
+    sex: "male",
+    spiritAnimal: "doggo",
+    skills: ["CSS", "Sleeping", "Internet browsing"]
+},{
+    name: "Veronika Machackova",
+    birthday: {
+    year: 1990,
+    month: 7,
+    day: 17
+    
+    },
+    sex: "female",
+    spiritAnimal: "Sloth",
+    skills: ["JS", "Petting dogs", "Complainig"]    
+}, {
+	name: "Vitek Linhart",
+	birthday: {
+		year: 1994,
+		month: 7, 
+	 	day:30
+	},
+	
+	sex: "male",
+	spiritAnimal: "raccoon",
+	skills: ["JS", "TriggeringRandomPeople", "TippingFedoras"]
+},{
+    name: "Wioletta Gluza",
+    birthday: {
+        year: 1992,
+        month: 8,
+        day: 4
+    },
+    sex: "female",
+    spiritAnimal: "wtf",
+    skills: ["Drinking beer", "Netflixing", "napping"],  
+},{
+
+    name: "YoungHyun Son",
+    birthday: {
+        year: 1992,
+        month: 1,
+        day: 21
+    },
+
+    sex: "female",
+    spiritAnimal: "Koala Bear",
+    skills: ["sleeping", "Js", "html"]
+
+
+}
+];
+        
+        
+        
+    </script>
+</body>
+</html>

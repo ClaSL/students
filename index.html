@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Teletubby</title>
+</head>
+<body>
+    
+    <section id="tubbies">
+        <h1>It's tubby time</h1>
+        
+    </section>
+    
+    <template id="teletubby">
+        <article class="tele">
+            <h1>NAME</h1>
+            <h2>Favorite Color: <span>COLOR</span></h2>
+            <h2 class="antenna">ANTENNA</h2>
+        </article>
+        
+    </template>
+    
+    <script>
+    let t1 = {
+        name: "Tinky Winky",
+        color: "purple",
+        antenna: "Triangle",
+        age: 3
+    }
+    
+    let template = document.querySelector('#teletubby').content;
+    let clone = template.cloneNode(true);    
+    let h1 = clone.querySelector('h1');
+    h1.textContent=t1.name;   
+    
+    let h2 = clone.querySelector('h2 span');
+    h2.textContent=t1.color;   
+    
+    let antenna = clone.querySelector('h2:nth-child(3)');
+    antenna.textContent=t1.antenna; 
+        
+    
+    let parent = document.querySelector("#tubbies");
+    parent.appendChild(clone);    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </script>
+</body>
+</html>
